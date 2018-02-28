@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B1BA347-3737-4A84-9FF8-ACD5C2B512ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Control_Order</RootNamespace>
+    <AssemblyName>Control_Order</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>13.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\ClassEmp.cs" />
+    <Compile Include="BL\ClassOrder.cs" />
+    <Compile Include="BL\ClassQute.cs" />
+    <Compile Include="BL\ClassUsers.cs" />
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="PL\FRM_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_About.Designer.cs">
+      <DependentUpon>FRM_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddNewEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddNewEmp.Designer.cs">
+      <DependentUpon>FRM_AddNewEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddNewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddNewOrder.Designer.cs">
+      <DependentUpon>FRM_AddNewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddNewQute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddNewQute.Designer.cs">
+      <DependentUpon>FRM_AddNewQute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AllOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AllOrder.Designer.cs">
+      <DependentUpon>FRM_AllOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AllQute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AllQute.Designer.cs">
+      <DependentUpon>FRM_AllQute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_BackupData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_BackupData.Designer.cs">
+      <DependentUpon>FRM_BackupData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ChangePassword.Designer.cs">
+      <DependentUpon>FRM_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_EmpManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_EmpManagment.Designer.cs">
+      <DependentUpon>FRM_EmpManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Main.Designer.cs">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_OrderControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_OrderControl.Designer.cs">
+      <DependentUpon>FRM_OrderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_OrderManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_OrderManagement.Designer.cs">
+      <DependentUpon>FRM_OrderManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_QuteForOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_QuteForOrder.Designer.cs">
+      <DependentUpon>FRM_QuteForOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_QuteManag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_QuteManag.Designer.cs">
+      <DependentUpon>FRM_QuteManag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ShowImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ShowImage.Designer.cs">
+      <DependentUpon>FRM_ShowImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SignIn.Designer.cs">
+      <DependentUpon>FRM_SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\FRM_About.resx">
+      <DependentUpon>FRM_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddNewEmp.resx">
+      <DependentUpon>FRM_AddNewEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddNewOrder.resx">
+      <DependentUpon>FRM_AddNewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddNewQute.resx">
+      <DependentUpon>FRM_AddNewQute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AllOrder.resx">
+      <DependentUpon>FRM_AllOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AllQute.resx">
+      <DependentUpon>FRM_AllQute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_BackupData.resx">
+      <DependentUpon>FRM_BackupData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ChangePassword.resx">
+      <DependentUpon>FRM_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_EmpManagment.resx">
+      <DependentUpon>FRM_EmpManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Main.resx">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_OrderControl.resx">
+      <DependentUpon>FRM_OrderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_OrderManagement.resx">
+      <DependentUpon>FRM_OrderManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_QuteForOrder.resx">
+      <DependentUpon>FRM_QuteForOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_QuteManag.resx">
+      <DependentUpon>FRM_QuteManag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ShowImage.resx">
+      <DependentUpon>FRM_ShowImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_SignIn.resx">
+      <DependentUpon>FRM_SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="13.ico" />
+    <None Include="Resources\About.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
